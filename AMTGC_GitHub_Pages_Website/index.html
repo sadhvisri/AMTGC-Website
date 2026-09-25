@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMTGC | Adaptive Multi-Junction Traffic Controller</title>
+  <meta name="description" content="AMTGC adaptive traffic controller project using Verilog, Xilinx ISE and ModelSim.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand">AMTGC</div>
+      <a class="nav-link" href="#project">Project</a>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">DIGITAL DESIGN • VERILOG • FPGA</p>
+      <h1>Adaptive Multi-Junction Traffic Controller</h1>
+      <p class="subtitle">
+        A coordinated traffic-control system for two 4-way junctions with
+        adaptive timing, green-wave coordination, pedestrian arbitration,
+        and emergency override.
+      </p>
+      <div class="buttons">
+        <a class="button primary" href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY" target="_blank">View GitHub Project</a>
+        <a class="button secondary" href="#features">Explore Project</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="project">
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">PROJECT OVERVIEW</p>
+        <h2>AMTGC at a glance</h2>
+      </div>
+      <div class="overview-grid">
+        <div class="card">
+          <h3>Objective</h3>
+          <p>
+            Design and verify an adaptive traffic controller that coordinates
+            two traffic junctions while responding to traffic density,
+            pedestrian requests and emergency conditions.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Design</h3>
+          <p>
+            The architecture uses two junction controllers and a shared
+            pedestrian arbiter with a green-wave trigger between junctions.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Verification</h3>
+          <p>
+            The design is simulated using Verilog testbenches and ModelSim,
+            with waveforms and verification evidence included in the project.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark" id="features">
+      <div class="section-heading">
+        <p class="eyebrow">CORE FEATURES</p>
+        <h2>System capabilities</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature"><span>01</span><h3>Two 4-Way Junctions</h3><p>North-South and East-West traffic sequencing at Junction A and Junction B.</p></div>
+        <div class="feature"><span>02</span><h3>Green-Wave Coordination</h3><p>Junction B is coordinated with Junction A using a configurable wave delay.</p></div>
+        <div class="feature"><span>03</span><h3>Adaptive Timing</h3><p>Green duration can respond to the configured traffic-density input within defined limits.</p></div>
+        <div class="feature"><span>04</span><h3>Pedestrian Arbiter</h3><p>A shared arbitration mechanism receives pedestrian requests and grants service fairly.</p></div>
+        <div class="feature"><span>05</span><h3>Emergency Override</h3><p>An emergency input forces both junctions toward a safe all-red condition.</p></div>
+        <div class="feature"><span>06</span><h3>Simulation & Verification</h3><p>RTL, testbench, simulation and waveform artifacts are organized in the submission package.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">TECHNOLOGY</p>
+        <h2>Implementation stack</h2>
+      </div>
+      <div class="tags">
+        <span>Verilog HDL</span>
+        <span>Xilinx ISE</span>
+        <span>ModelSim</span>
+        <span>RTL Design</span>
+        <span>Testbench</span>
+        <span>Digital Logic</span>
+      </div>
+    </section>
+
+    <section class="section architecture">
+      <div class="section-heading">
+        <p class="eyebrow">ARCHITECTURE</p>
+        <h2>High-level control flow</h2>
+      </div>
+      <div class="flow">
+        <div class="flow-box">Traffic Density<br><small>Input</small></div>
+        <div class="arrow">→</div>
+        <div class="flow-box">Junction A<br><small>Controller</small></div>
+        <div class="arrow">→</div>
+        <div class="flow-box">Green-Wave<br><small>Trigger / Delay</small></div>
+        <div class="arrow">→</div>
+        <div class="flow-box">Junction B<br><small>Controller</small></div>
+      </div>
+      <div class="flow second">
+        <div class="flow-box">Pedestrian Requests</div>
+        <div class="arrow">→</div>
+        <div class="flow-box">Shared Pedestrian Arbiter</div>
+        <div class="arrow">→</div>
+        <div class="flow-box">Pedestrian Grant</div>
+      </div>
+      <div class="emergency">
+        <strong>Emergency Override:</strong> when activated, the controllers transition toward the defined safe all-red state.
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="section-heading">
+        <p class="eyebrow">SUBMISSION PACKAGE</p>
+        <h2>Project contents</h2>
+      </div>
+      <div class="package-grid">
+        <div><b>rtl/</b><p>Verilog RTL modules</p></div>
+        <div><b>tb/</b><p>Verification testbenches</p></div>
+        <div><b>sim/</b><p>Simulation-related files</p></div>
+        <div><b>waveforms/</b><p>Simulation waveform evidence</p></div>
+        <div><b>verification/</b><p>Verification results</p></div>
+        <div><b>diagrams/</b><p>System diagrams</p></div>
+        <div><b>docs/</b><p>Documentation and reports</p></div>
+        <div><b>video/</b><p>Project demonstration material</p></div>
+      </div>
+    </section>
+
+    <section class="section links">
+      <div class="section-heading">
+        <p class="eyebrow">PROJECT LINKS</p>
+        <h2>Resources</h2>
+      </div>
+      <p>Replace the placeholder GitHub URL below with your public repository URL before publishing.</p>
+      <a class="button primary" href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY" target="_blank">Open Source Repository</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>AMTGC • Adaptive Multi-Junction Traffic Controller</p>
+    <p class="small">Academic / internship project demonstration website</p>
+  </footer>
+</body>
+</html>
